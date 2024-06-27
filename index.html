@@ -34,6 +34,8 @@
         }
         .container {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         h1, h2 {
             color: #ff6600;
@@ -61,7 +63,31 @@
             width: 100%;
             bottom: 0;
         }
+        .hidden {
+            display: none;
+        }
     </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home');
+            var navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var sectionId = this.getAttribute('href').substring(1);
+                    showSection(sectionId);
+                });
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -80,13 +106,12 @@
 </nav>
 
 <div class="container">
-
     <section id="home" class="section">
         <h2>Home</h2>
         <p>Welcome to RoofWise Co, your trusted roofing and exterior remodeling company. We provide top-notch services in roofing, siding, gutters, and windows. We are dedicated to being wise about your needs and delivering quality results.</p>
     </section>
 
-    <section id="about-us" class="section">
+    <section id="about-us" class="section hidden">
         <h2>About Us</h2>
         <p>Welcome to RoofWise Co, a premier roofing and exterior remodeling company dedicated to enhancing the beauty, durability, and value of your property. With years of experience in the industry, we specialize in providing top-quality roofing, siding, gutter, and window services tailored to meet the unique needs of each client.</p>
         <p>At RoofWise Co, our mission is to deliver exceptional craftsmanship and unparalleled customer service. We take pride in being CertainTeed Shingle Master certified, which reflects our commitment to using the best materials and adhering to the highest standards in the industry.</p>
@@ -95,7 +120,7 @@
         <p>Discover the RoofWise Co difference today and let us be your trusted partner for all your roofing and exterior remodeling needs.</p>
     </section>
 
-    <section id="service-area" class="section">
+    <section id="service-area" class="section hidden">
         <h2>Service Area</h2>
         <p>We proudly serve the following areas:</p>
         <ul>
@@ -106,13 +131,13 @@
         </ul>
     </section>
 
-    <section id="testimonials" class="section">
+    <section id="testimonials" class="section hidden">
         <h2>Testimonials</h2>
         <p>"RoofWise Co did an amazing job on our new roof. Highly recommended!" - John Doe</p>
         <p>"Professional and reliable service. Our new windows look fantastic!" - Jane Smith</p>
     </section>
 
-    <section id="contact-us" class="section">
+    <section id="contact-us" class="section hidden">
         <h2>Contact Us</h2>
         <p>Get in touch with us for a free quote or any inquiries:</p>
         <p>Email: info@roofwiseco.com</p>
@@ -123,7 +148,6 @@
     <div class="certification">
         <p>We are CertainTeed Shingle Master certified</p>
     </div>
-
 </div>
 
 <footer>
