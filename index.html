@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoofWise Co</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
         header {
             background-color: #ff6600;
-            color: #000;
+            color: #fff;
             padding: 20px 0;
             text-align: center;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #000;
+            background-color: #333;
         }
         nav a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
             text-transform: uppercase;
+            font-weight: 700;
         }
         nav a:hover {
             background-color: #ff6600;
-            color: #000;
+            color: #fff;
         }
         .container {
             padding: 20px;
@@ -40,31 +43,50 @@
         h1, h2 {
             color: #ff6600;
         }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
         .logo {
-            width: 100px;
+            width: 150px;
             margin: 0 auto;
+            display: block;
         }
         .section {
             margin-bottom: 40px;
         }
         .certification {
-            background-color: #000;
+            background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
             margin: 20px 0;
         }
         footer {
-            background-color: #000;
+            background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
+            padding: 20px 0;
+            position: relative;
             bottom: 0;
+            width: 100%;
         }
         .hidden {
             display: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        a {
+            color: #ff6600;
+            text-decoration: none;
         }
     </style>
     <script>
@@ -109,14 +131,14 @@
     <section id="home" class="section">
         <h2>Home</h2>
         <p>Welcome to RoofWise Co, your trusted roofing and exterior remodeling company. We provide top-notch services in roofing, siding, gutters, and windows. Our team is dedicated to delivering quality results that meet your needs.</p>
-        <img src="home-image.jpg" alt="RoofWise Co Home Image" style="width:100%;">
+        <img src="home-image.jpg" alt="RoofWise Co Home Image">
     </section>
 
     <section id="about-us" class="section hidden">
         <h2>About Us</h2>
         <p>RoofWise Co is a premier roofing and exterior remodeling company dedicated to enhancing the beauty, durability, and value of your property. With years of experience, we specialize in providing top-quality roofing, siding, gutter, and window services tailored to meet the unique needs of each client.</p>
         <p>Our mission is to deliver exceptional craftsmanship and unparalleled customer service. We take pride in being CertainTeed Shingle Master certified, reflecting our commitment to using the best materials and adhering to the highest standards in the industry.</p>
-        <img src="about-us-image.jpg" alt="About Us Image" style="width:100%;">
+        <img src="about-us-image.jpg" alt="About Us Image">
     </section>
 
     <section id="service-area" class="section hidden">
@@ -128,7 +150,7 @@
             <li>City C</li>
             <li>City D</li>
         </ul>
-        <img src="service-area-image.jpg" alt="Service Area Image" style="width:100%;">
+        <img src="service-area-image.jpg" alt="Service Area Image">
     </section>
 
     <section id="testimonials" class="section hidden">
@@ -140,7 +162,7 @@
         <blockquote>
             <p>"Professional and reliable service. Our new windows look fantastic!" - Jane Smith</p>
         </blockquote>
-        <img src="testimonials-image.jpg" alt="Testimonials Image" style="width:100%;">
+        <img src="testimonials-image.jpg" alt="Testimonials Image">
     </section>
 
     <section id="contact-us" class="section hidden">
@@ -149,7 +171,7 @@
         <p>Email: <a href="mailto:info@roofwiseco.com">info@roofwiseco.com</a></p>
         <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
         <p>Address: 123 Roofing St, City, State, ZIP</p>
-        <img src="contact-us-image.jpg" alt="Contact Us Image" style="width:100%;">
+        <img src="contact-us-image.jpg" alt="Contact Us Image">
     </section>
 
     <div class="certification">
