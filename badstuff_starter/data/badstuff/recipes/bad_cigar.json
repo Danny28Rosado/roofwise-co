@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    " D ",
+    " P "
+  ],
+  "key": {
+    "D": {
+      "item": "badstuff:dried_leaves"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "badstuff:bad_cigar",
+    "count": 1
+  }
+}

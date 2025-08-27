@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "badstuff:dried_leaves"
+    }
+  ],
+  "result": {
+    "item": "badstuff:bad_cigarette",
+    "count": 1
+  }
+}
